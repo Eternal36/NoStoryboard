@@ -80,6 +80,7 @@ class ViewController: UIViewController {
         button.titleLabel?.tintColor = .gray
         //button.backgroundColor = .black
         //button.clipsToBounds = true
+        button.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
         return button
         
     }()
@@ -175,6 +176,11 @@ class ViewController: UIViewController {
         buttonPrevTrack.topAnchor.constraint(equalTo: slider.bottomAnchor, constant: 8).isActive = true
         buttonPrevTrack.widthAnchor.constraint(equalTo: slider.widthAnchor).isActive = true
         buttonPrevTrack.heightAnchor.constraint(equalToConstant: 30).isActive = true
+    }
+    
+    @objc func buttonAction(sender: UIButton!) {
+        let vc = TableViewController()
+        present(vc, animated: true, completion: nil)
     }
     
     
