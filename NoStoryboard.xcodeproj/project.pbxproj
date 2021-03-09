@@ -14,6 +14,7 @@
 		1F5A03F325F14F03004F8223 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F5A03F225F14F03004F8223 /* Assets.xcassets */; };
 		1F5A03F625F14F03004F8223 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F5A03F425F14F03004F8223 /* LaunchScreen.storyboard */; };
 		1F5A03FF25F29881004F8223 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5A03FE25F29881004F8223 /* TableViewController.swift */; };
+		1F5A040325F7BD7E004F8223 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5A040225F7BD7E004F8223 /* CustomTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		1F5A03F525F14F03004F8223 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1F5A03F725F14F03004F8223 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F5A03FE25F29881004F8223 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		1F5A040225F7BD7E004F8223 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				1F5A03EB25F14EFE004F8223 /* SceneDelegate.swift */,
 				1F5A03ED25F14EFE004F8223 /* ViewController.swift */,
 				1F5A03FE25F29881004F8223 /* TableViewController.swift */,
+				1F5A040225F7BD7E004F8223 /* CustomTableViewCell.swift */,
 				1F5A03EF25F14EFE004F8223 /* Main.storyboard */,
 				1F5A03F225F14F03004F8223 /* Assets.xcassets */,
 				1F5A03F425F14F03004F8223 /* LaunchScreen.storyboard */,
@@ -141,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F5A03EE25F14EFE004F8223 /* ViewController.swift in Sources */,
+				1F5A040325F7BD7E004F8223 /* CustomTableViewCell.swift in Sources */,
 				1F5A03EA25F14EFE004F8223 /* AppDelegate.swift in Sources */,
 				1F5A03EC25F14EFE004F8223 /* SceneDelegate.swift in Sources */,
 				1F5A03FF25F29881004F8223 /* TableViewController.swift in Sources */,

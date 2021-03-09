@@ -21,8 +21,8 @@ class ViewController: UIViewController {
         let image = UIImage(named: "111")
         let imageView = UIImageView(image: image)
         imageView.translatesAutoresizingMaskIntoConstraints = false
-        imageView.backgroundColor = .clear
-        imageView.alpha = 0.5
+        imageView.contentMode = .scaleToFill
+    
         return imageView
     }()
     
@@ -88,13 +88,14 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        let img = UIImage(named: "111")
-//        img?.withTintColor(.white, renderingMode: .automatic)
-//        view.backgroundColor = UIColor(patternImage: img!).withAlphaComponent(0.5)
-        //view.layer.contents = img?.cgImage
-        //view.alpha = 0.05
+        let img = UIImage(named: "111")
+        img?.withTintColor(.white, renderingMode: .automatic)
+        view.backgroundColor = UIColor(patternImage: img!)
+        let blurEffect = UIVisualEffectView(effect: UIBlurEffect(style: .light))
+        blurEffect.frame = self.view.bounds
        
-      //  view.addSubview(imageViewBackground)
+        view.addSubview(imageViewBackground)
+        view.addSubview(blurEffect)
         view.addSubview(imageView)
         view.addSubview(labelName)
         view.addSubview(labelInfo)
@@ -102,7 +103,7 @@ class ViewController: UIViewController {
         view.addSubview(slider)
         view.addSubview(buttonPrevTrack)
         
-       // setupImageViewBackground()
+      //  setupImageViewBackground()
         setupImageView()
         setupLabelName()
         setupLabelInfo()
